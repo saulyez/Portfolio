@@ -1,0 +1,55 @@
+.Salutation
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.Text-Container {
+    position: fixed;
+    top: 20%;       /* Distance from the top */
+    left: 10%;      /* Center horizontally */
+    transform: translateX(-10%);
+    text-align: left;
+    padding: auto;
+  }
+  .name {
+    font-size: 64px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #c7c5c58f;
+
+  }
+  .Image-Container {
+    height: 25rem;
+    width: 39rem;
+    position: fixed;
+    top: 15%;      
+    right: 10%;
+}
+.Button-Container {
+    display: flex;
+    gap: 20px; /* Adjust the gap value as needed */
+}
+
+.Button-Container button {
+    font-size: 18px; /* Increase the font size */
+    padding: 15px 20px; /* Increase the padding */
+    border-radius: 50px; /* Add border-radius */
+    cursor: pointer;
+    width: 150px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+}
+.Discover-Button {
+    background-color: #7F8EFA;
+    color: #000000;
+    border: none;
+}
+.Contact-Button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
