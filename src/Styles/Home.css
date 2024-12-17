@@ -7,7 +7,7 @@
 .Text-Container {
     position: fixed;
     top: 20%;       /* Distance from the top */
-    left: 10%;      /* Center horizontally */
+    left: 13%;      /* Center horizontally */
     transform: translateX(-10%);
     text-align: left;
     padding: auto;
@@ -52,4 +52,16 @@
     background-color: transparent;
     color: #ffffff;
     border: 2px solid #ffffff;
+}
+.Icon-Bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A3B6FE;
+    height: 5rem;
+    width: 18rem; /* Make the width smaller */
+    position: fixed;
+    top: 75%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
 }

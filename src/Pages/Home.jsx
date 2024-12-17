@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import "../Styles/Home.css";
 import Animation from "../Components/forLoopanimation";
+import Icon_Bar from "../Components/Icon_Bar";
 const Home = () => {
   return (
     <div>
@@ -28,7 +29,7 @@ const Home = () => {
 
         {/* Name */}
         <h1 className="name">Saul Ye Zheng</h1>
-        <h2 className="title">Software Developer</h2>
+        <h2 className="title">I am a Software Developer</h2>
 
         <div className="Button-Container">
             <button className="Discover-Button" onClick={() => window.location.href = '/about'}>Discover</button>
@@ -38,6 +39,7 @@ const Home = () => {
       <div className="Image-Container">
         <Animation />
       </div>
+      <Icon_Bar />
     </div>
   );
 };
