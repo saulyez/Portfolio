@@ -1,6 +1,6 @@
 const Contact = () => (
     <div>
-        <h1>404 - Page Not Found</h1>
+        <h1>Contact</h1>
     </div>
     );
 export default Contact;
