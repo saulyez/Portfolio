@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import SaintMary from "../assets/saintmary.png";
 import Kaplan from "../assets/kaplan.jpeg";
-import Uob from "../assets/uob.png";
+import Uob from "../assets/uob.svg";
 
 
 const ImageSlider = () => {
