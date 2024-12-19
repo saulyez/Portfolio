@@ -1,67 +1,103 @@
-.Salutation
-{
+.Home-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* outline: red dashed 1px; */
+    height: 90vh; /* Adjust the height to be almost as big as the screen */
+    width: 96vw; /* Adjust the width to be almost as big as the screen */
+}
+
+.Salutation {
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
 }
+
 .Text-Container {
-    position: fixed;
-    top: 20%;       /* Distance from the top */
-    left: 13%;      /* Center horizontally */
-    transform: translateX(-10%);
     text-align: left;
-    padding: auto;
-  }
-  .name {
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Center the container */
+}
+
+.name {
     font-size: 64px;
     font-weight: bold;
     color: #ffffff;
-  }
-  .title {
+}
+
+.title {
     font-size: 36px;
     font-weight: bold;
     color: #c7c5c58f;
-
-  }
-  .Image-Container {
-    height: 25rem;
-    width: 39rem;
-    position: fixed;
-    top: 15%;      
-    right: 10%;
 }
+
+.Image-Container {
+    height: 50vh;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
 .Button-Container {
     display: flex;
-    gap: 20px; /* Adjust the gap value as needed */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: left;
 }
 
 .Button-Container button {
-    font-size: 18px; /* Increase the font size */
-    padding: 15px 20px; /* Increase the padding */
-    border-radius: 50px; /* Add border-radius */
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 50px;
     cursor: pointer;
-    width: 150px; /* Set a fixed width */
-    height: 50px; /* Set a fixed height */
+    width: 150px;
+    height: 50px;
 }
+
 .Discover-Button {
     background-color: #7F8EFA;
     color: #000000;
     border: none;
 }
+
 .Contact-Button {
     background-color: transparent;
     color: #ffffff;
     border: 2px solid #ffffff;
 }
+
 .Icon-Bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #A3B6FE;
-    height: 5rem;
-    width: 18rem; /* Make the width smaller */
-    position: fixed;
-    top: 75%; /* Center vertically */
-    left: 50%; /* Center horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+}
+/* *{
+    outline: red dashed 1px;
+} */
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .Home-Container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .Text-Container {
+        width: 50%;
+    }
+
+    .Image-Container {
+        width: 40%;
+    }
+
+       .Icon-Bar {
+        position: fixed; /* Changed from relative to absolute */
+        top: 50px; /* Use fixed units */
+        left: 50px; /* Use fixed units */
+        transform: translate(-50%, -50%);
+    }
 }
