@@ -25,7 +25,7 @@ const ImageSlider = () => {
     const imageVariants = {
         left: { x: '-150%', scale: 0.4, zIndex: 1 },
         center: { x: '0%', scale: 0.5, zIndex: 5 },
-        right: { x: '150%', scale: 0.3, zIndex: 1 }
+        right: { x: '150%', scale: 0.4, zIndex: 1 }
     };
 
     return (
