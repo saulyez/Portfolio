@@ -1,6 +1,10 @@
+import Carousel from "../Components/Carousel";
 
-const Projects = () => (
-    <div>
-        <h1>Projects</h1>
-    </div>);
+const Projects = () => {
+    return (
+        <div className="Projects-Container">
+            Hello
+        </div>
+    );
+};
 export default Projects;
