@@ -29,7 +29,7 @@ const ImageSlider = () => {
     };
 
     return (
-        <div className='relative flex items-center justify-center' style={{ height: "300px", overflow: "hidden", position: "relative",}}>
+        <div className='relative flex items-center justify-center' style={{ height: "200px", position: "relative", top: "900px", transform: "translate(-80%,50%)", justifyContent: "center" }}>
             {images.map((image, index) => (
                 <motion.img
                     key={image}
@@ -43,7 +43,8 @@ const ImageSlider = () => {
                     style={{ 
                         width: '300px',
                         height: '300px', 
-                        position: 'fixed',
+                        position: 'absolute',
+                        // outline: 'blue solid 2px'
                     }}
                 />
             ))}

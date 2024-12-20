@@ -1,6 +1,7 @@
 import '../Styles/About.css';
 import ImageSlider from '../Components/Schools';
 import Carousel from '../Components/Carousel';
+import Animation2 from '../Components/Animation2';
 
 const About = () => {
     return (
@@ -16,8 +17,14 @@ const About = () => {
             {/* <div className="Carousel-Container">
             
             </div> */}
-            <div className="Schools-Container">
-                <ImageSlider />
+
+            <ImageSlider />
+            <div className='Experience-Container'>
+                <h1>Experience</h1>
+                <p>
+                    As an intern at Ancova capital management I was able to develop my skills with hands-on experience. This experience helped me boost my career as a software engineer and taught me valuable lessons. Teamwork and effort are the words that would describe my experience at Ancova.
+                </p>
+                <Animation2 />                
             </div>
         </div>
     );
