@@ -5,6 +5,8 @@ import img2 from "../assets/uni.jpg";
 import img3 from "../assets/me.jpg";
 import img4 from "../assets/coffee.jpg";
 import img5 from "../assets/grad.jpg";
+import left from "../assets/left.svg";
+import right from "../assets/right.svg";
 import "../styles/Carousel.css";
 
 const Carousel = () => {
@@ -62,7 +64,7 @@ const Carousel = () => {
                         className="left"
                         onClick={handlePrev}
                     >
-                        {/* <img src={img1} alt="Previous slide icon" height="20" /> */}
+                        <img src={left} height="20" alt="Previous" />
                     </motion.div>
                     <motion.div
                         variants={slideVariants}
@@ -70,7 +72,7 @@ const Carousel = () => {
                         className="right"
                         onClick={handleNext}
                     >
-                        {/* <img src={img2} alt="Next slide icon" height="20" /> */}
+                        <img src={right} height="20" alt="Next" />
                     </motion.div>
                 </div>
             </div>
