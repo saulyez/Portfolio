@@ -1,0 +1,42 @@
+.Main-Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    height: 240vh;
+    outline: red dashed 1px;
+    text-align: center;
+}
+.Card-Container {
+    position: relative;
+    top: 200px;
+    outline: green dashed 1px;
+    max-height: 700px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} 
+.Card{
+    background-color: #2E2E2E;
+    border-radius: 40px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    text-align: left;
+    margin: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.card:nth-child(2n) {
+    transform: translateY(30px); /* Offset every 2nd card */
+  }
+
+.Card .icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.Card .icon {
+    height: 45px;
+    width: 55px;
+}
