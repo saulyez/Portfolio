@@ -1,9 +1,18 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body covers the full viewport height */
+  margin: 0;
+}
+
+main {
+  flex: 1; /* Allow the main content to grow and push the footer to the bottom */
+}
+
 .Footer {
   padding: 20px;
   text-align: center;
-  position: fixed;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 100%;
 }
+/* *{
+  border: red dashed 1px;
+} */

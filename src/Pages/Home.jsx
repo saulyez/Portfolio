@@ -4,7 +4,7 @@ import Animation from "../Components/forLoopanimation";
 import Icon_Bar from "../Components/Icon_Bar";
 const Home = () => {
   return (
-    <div>
+    <div className="Home-Container">
       <div className="Text-Container">
         {/* Salutation with animated hand emoji */}
         <p className="Salutation">
@@ -39,7 +39,9 @@ const Home = () => {
       <div className="Image-Container">
         <Animation />
       </div>
-      <Icon_Bar />
+      {/* <div className="Icon-Bar">
+        <Icon_Bar />
+      </div> */}
     </div>
   );
 };

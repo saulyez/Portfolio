@@ -1,28 +1,28 @@
 /* Icon Bar Container */
 .icon-bar {
-    display: flex;                /* Arrange items in a row */
-    justify-content: space-evenly; /* Equal spacing between items */
-    align-items: center;          /* Vertically center items */
-    background-color: #A3B6FE;    /* Background color */
-    border-radius: 25px;          /* Rounded corners */
-    padding: 1rem;                /* Spacing inside the container */
-    width: 60%;                   /* Set a width, adjust as needed */
-    margin: 2rem auto;
-    position: fixed;              /* Fix the position relative to the viewport */
-    bottom: 5rem;                 /* Position it 20px from the bottom */
-    left: 50%;                    /* Center the bar horizontally */
-    transform: translateX(-50%);  /* Properly center the bar */
+  display: flex;                /* Arrange items in a row */
+  justify-content: space-evenly; /* Equal spacing between items */
+  align-items: center;          /* Vertically center items */
+  background-color: #A3B6FE;    /* Background color */
+  border-radius: 25px;          /* Rounded corners */
+  padding: 1rem;                /* Spacing inside the container */
+  width: 60%;                   /* Set a width, adjust as needed */
+  margin: 2rem auto;
+  position: fixed;              /* Fix the position relative to the viewport */
+  bottom: 1rem;                 /* Position it 1rem from the bottom */
+  left: 50%;                    /* Center the bar horizontally */
+  transform: translateX(-50%);  /* Properly center the bar */
   }
   
   /* Individual Icons */
   .icon {
-    height: 50px;                 /* Set the size of the icons */
-    width: auto;                  /* Maintain aspect ratio */
-    opacity: 0.7;                 /* Slight transparency */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  height: 50px;                 /* Set the size of the icons */
+  width: auto;                  /* Maintain aspect ratio */
+  opacity: 0.7;                 /* Slight transparency */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
   }
   
   .icon:hover {
-    opacity: 1;                   /* Full opacity on hover */
-    transform: scale(1.1);        /* Slight zoom-in effect */
+  opacity: 1;                   /* Full opacity on hover */
+  transform: scale(1.1);        /* Slight zoom-in effect */
   }
