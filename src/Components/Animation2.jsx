@@ -11,4 +11,4 @@ const Animation2 = () => {
   );
 };
 
-export default Animationnimation2;
+export default Animation2;
