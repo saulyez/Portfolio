@@ -28,8 +28,12 @@ const cardData = [
     description: 'Created a firewall program to allow IP addresses to connect to a TCP multi threaded server',
     icons: [c, Git]
     },
+    {title: 'Grade Consistency System',
+    description: 'Created a grade consistency system for education institutions using KNN algorithm',
+    icons: [js, Git, psql, Python]    
+    },
     {title: 'Portfolio',
-    description: 'Created a portfolio website to showcase my projects',
+    description: 'Created a portfolio website to showcase my projects and skills. This website talks about me and my aspirations',
     icons: [react, Git, html, css, js]
     }
 
