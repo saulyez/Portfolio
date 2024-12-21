@@ -2,18 +2,21 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    height: 240vh;
+    height: 300vh;
     outline: red dashed 1px;
     text-align: center;
 }
 .Card-Container {
     position: relative;
     top: 200px;
+    width: 800px;
+    left: 300px;
     outline: green dashed 1px;
-    max-height: 700px;
+    max-height: 1600px;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     flex-wrap: wrap;
+    gap: 40px;
 } 
 .Card{
     background-color: #2E2E2E;
@@ -27,8 +30,8 @@
     position: relative;
 }
 
-.card:nth-child(2n) {
-    transform: translateY(30px); /* Offset every 2nd card */
+.Card:nth-child(2n) {
+    transform: translateY(300px); /* Offset every 2nd card */
   }
 
 .Card .icons{
