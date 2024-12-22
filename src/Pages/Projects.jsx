@@ -10,6 +10,7 @@ import react from "../assets/react.svg"
 import html from "../assets/html.svg"
 import css from "../assets/css.svg"
 import js from "../assets/js.svg"
+import { Technologies } from "../Components/Technologies";
 
 const cardData = [
     {title: 'Web Scraper',
@@ -51,6 +52,9 @@ const Projects = () => {
                         icons={card.icons}
                     /> 
                 ))}
+            </div>
+            <div className="Tech-Stack">
+                <Technologies />
             </div>
         </div>
     );
