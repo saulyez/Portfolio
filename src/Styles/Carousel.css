@@ -1,7 +1,9 @@
 .carousel-container{
-    position: relative;
+    position: absolute;
     top: 200px;
-    left: 300px;
+    left: 50%;
+    transform: translate(30%);
+    /* border: red dashed 1px; */
 }
 .carousel-images {
     position: relative;
