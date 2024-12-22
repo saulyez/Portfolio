@@ -17,7 +17,6 @@ const About = () => {
             {/* <div className="Carousel-Container">
             
             </div> */}
-
             <ImageSlider />
             <div className='Experience-Container'>
                 <h1>Experience</h1>

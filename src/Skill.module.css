@@ -1,0 +1,343 @@
+  /* Technologies */
+  .technologies {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    min-height: 100vh;
+  }
+  
+  .techSection {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 5rem;
+    column-gap: 1rem;
+  }
+  
+  .tools {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    max-width: 80vmin;
+  }
+  
+  .languages,
+  .os,
+  .cloud {
+    max-width: 30vmin;
+  }
+  
+  .techSection > section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .langSection,
+  .toolSection,
+  .osSection,
+  .cloudSection {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+  }
+  
+  .langSection,
+  .osSection,
+  .cloudSection {
+    max-width: 20rem;
+  }
+  
+  .langSection > section,
+  .toolSection > section,
+  .osSection > section,
+  .cloudSection > section {
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+    padding: 3rem 0;
+  }
+  
+  /* 4 X number of icons (7) */
+  .osSection > section {
+    animation: scrollos 10s linear infinite;
+  }
+  
+  @keyframes scrollos {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-105.01%);
+    }
+  }
+  
+  /* 4 X number of icons (4) */
+  .langSection > section {
+    animation: scrollLang 10s linear infinite;
+  }
+  
+  @keyframes scrollLang {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-109.5%);
+    }
+  }
+  
+  /* 4 X number of icons (8) */
+  .cloudSection > section {
+    animation: scrollcloud 10s linear infinite;
+  }
+  
+  @keyframes scrollcloud {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-104.5%);
+    }
+  }
+  
+  /* Different size */
+  .toolSection > section {
+    animation: scrollLong 10s linear infinite;
+  }
+  
+  @keyframes scrollLong {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-103%);
+    }
+  }
+  
+  .langSection:hover > section,
+  .toolSection:hover > section,
+  .osSection:hover > section,
+  .cloudSection:hover > section {
+    animation-play-state: paused;
+  }
+  
+  .toolSection {
+    max-width: 69rem;
+  }
+  
+  .langSection > section,
+  .toolSection > section,
+  .toolSection > section,
+  .osSection > section,
+  .cloudSection > section {
+    flex-shrink: 0;
+  }
+  
+  .techSection h3,
+  .technologies > h2 {
+    font-weight: 500;
+    background: #7F8EFA;
+    background-clip: text;
+    background-size: 200% 200%;
+    color: transparent;
+    text-align: center;
+    animation: gradient-animation 3s linear infinite reverse;
+  }
+  
+  /* .technologies h2:hover,
+  .technologies h3:hover {
+    color: rgb(0, 204, 255);
+    text-shadow: 2px 2px 5px rgb(90, 90, 90);
+    animation-play-state: paused;
+  } */
+  
+  .technologies h3,
+  
+  .techSection h3 {
+    font-size: 1.5rem;
+  }
+  
+  .technologies > h2 {
+    font-size: 2rem;
+  }
+  
+  .techSection svg,
+  .techSection img {
+    width: 3.9rem;
+    height: 3.9rem;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .techSection svg:hover,
+  .techSection img:hover {
+    transform: scale(1.15);
+    filter: grayscale(0);
+  }
+  
+  .iconContainer {
+    position: relative;
+  }
+  
+  .box::after {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 600;
+    bottom: -2.2rem;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, bottom 0.3s ease-in-out;
+  }
+  
+  .box:hover::after {
+    opacity: 1;
+    bottom: -2.3rem;
+  }
+  
+  .tsBox::after {
+    content: "TypeScript";
+  }
+  
+  .jsBox::after {
+    content: "JavaScript";
+  }
+  
+  .cBox::after {
+    content: "C";
+  }
+  
+  .pythonBox::after {
+    content: "Python";
+  }
+  
+  .htmlBox::after {
+    content: "HTML5";
+  }
+  
+  .cssBox::after {
+    content: "CSS3";
+  }
+  .haskellBox::after {
+    content: "Haskell";
+  }
+  
+ 
+  .postgreBox::after {
+    content: "PostgreSQL";
+  }
+  
+  .vsCodeBox::after {
+    content: "VS Code";
+  }
+  
+  .gitBox::after {
+    content: "Git";
+  }
+  .brewBox::after {
+    content: "Homebrew";
+  }
+  .githubBox::after {
+    content: "GitHub";
+  }
+  
+  .webpackBox::after {
+    content: "Webpack";
+  }
+  
+  .viteBox::after {
+    content: "Vite";
+  }
+  
+  .npmBox::after {
+    content: "NPM";
+  }
+  .intelliJBox::after {
+    content: "IntelliJ";
+  }
+  .linuxBox::after {
+    content: "Linux";
+  }
+  .windowsBox::after {
+    content: "Windows";
+  }
+  .macBox::after {
+    content: "MacOS";
+  }
+  .awsBox::after {
+    content: "AWS";
+  }
+  .azureBox::after {
+    content: "Azure";
+  }
+  .cloudBox::after {
+    content: "Cloudflare";
+  }
+  
+  @media (max-width: 1600px) {
+    .allDevices,
+    .analytics,
+    .author,
+    .bot,
+    .mobile,
+    .research,
+    .team {
+      gap: 4rem;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .allDevices,
+    .analytics,
+    .author,
+    .bot,
+    .mobile,
+    .research,
+    .team {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5rem;
+      height: 100%;
+    }
+  
+    .info > h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .technologies {
+      gap: 2rem;
+    }
+  
+    .techSection {
+      display: grid;
+      grid-template: repeat(4, 1fr) / 1fr;
+      gap: 2.5rem;
+    }
+  
+    .tools {
+      max-width: 25rem;
+    }
+  
+    .languages,
+    .os,
+    .cloud {
+      max-width: 19rem;
+    }
+  
+    .context > span:last-child {
+      max-width: 12rem;
+    }
+  }

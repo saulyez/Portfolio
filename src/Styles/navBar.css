@@ -7,8 +7,8 @@ nav {
     align-items: center;
     position: absolute;
     top: 1rem;
-    left: 20rem;
-    right: 20rem;
+    left: 50%;
+    transform: translateX(-50%);
     width: 50%;
     background-color: #111;
     color: white;
