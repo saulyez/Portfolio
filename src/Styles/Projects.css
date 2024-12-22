@@ -3,14 +3,15 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     height: 300vh;
-    outline: red dashed 1px;
+    /* outline: red dashed 1px; */
     text-align: center;
 }
 .Card-Container {
     position: relative;
     top: 300px;
     width: 800px;
-    left: 300px;
+    left: 50%;
+    transform: translateX(-50%);
     /* outline: green dashed 1px; */
     max-height: 1600px;
     display: flex;
@@ -46,7 +47,8 @@
 .Tech-Stack {
     top: 1750px;
     position: absolute;
-    left: 400px;;
+    left: 50%;;
+    transform: translate(-50%);
     display: flex;
     gap: 10px;
     margin-top: 10px;

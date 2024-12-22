@@ -29,7 +29,7 @@ const ImageSlider = () => {
     };
 
     return (
-        <div className='relative flex items-center justify-center' style={{ height: "200px", position: "relative", top: "900px", transform: "translate(-80%,50%)", justifyContent: "center" }}>
+        <div className='relative flex items-center justify-center' style={{ height: "200px", position: "absolute", top: "900px", left: "40%",transform: "translate(-50%,50%)"}}>
             {images.map((image, index) => (
                 <motion.img
                     key={image}

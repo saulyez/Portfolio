@@ -2,7 +2,8 @@ import { useEffect, useRef } from "react";
 import skillStyles from "../Skill.module.css";
 import { ToolSection } from "./Tools";
 import { LangSection } from "./Languages";
-import { FrontSection } from "./FrontSection";
+import { OsSection } from "./OsSection";
+import { CloudSection } from "./CloudSection";
 import { useAnimation, useInView, motion } from "framer-motion";
 
 function Technologies() {
@@ -44,18 +45,17 @@ function Technologies() {
             <ToolSection />
           </section>
         </section>
-        <section className={skillStyles.frontEnd}>
-          <h3>Front-End</h3>
-          <section className={skillStyles.frontSection}>
-            <FrontSection />
-            <FrontSection />
+        <section className={skillStyles.os}>
+          <h3>Operating System</h3>
+          <section className={skillStyles.osSection}>
+            <OsSection />
+            {/* <OsSection /> */}
           </section>
         </section>
-        <section className={skillStyles.backEnd}>
-          <h3>Back-End</h3>
-          <section className={skillStyles.backSection}>
-            {/* <BackSection />
-            <BackSection /> */}
+        <section className={skillStyles.cloud}>
+          <h3>Cloud</h3>
+          <section className={skillStyles.cloudSection}>
+            <CloudSection />
           </section>
         </section>
       </section>
