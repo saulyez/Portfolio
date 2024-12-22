@@ -1,0 +1,31 @@
+.Contact-Container {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 90vh;
+    padding: 20px;
+    /* border: red dashed 1px; */
+    text-align: center; /* Center the text */
+  }
+  
+  .Contact-Container h1 {
+    margin-bottom: 20px; /* Add spacing below the title */
+  }
+  .Icons-Container {
+    display: flex; /* Arrange items in a row */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    gap: 20px; /* Add spacing between the icons */
+  }
+  img {
+    width: 100px; /* Set the width of the images */
+    height: 100px; /* Set the height of the images */
+    margin: 10px; /* Add spacing between the images */
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  

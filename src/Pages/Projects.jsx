@@ -35,7 +35,7 @@ const cardData = [
     },
     {title: 'Portfolio',
     description: 'Created a portfolio website to showcase my projects and skills. This website talks about me and my aspirations',
-    icons: [react, Git, html, css, js]
+    icons: [react, html, css, js]
     }
 
 ];
