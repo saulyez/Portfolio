@@ -7,7 +7,7 @@ import Contact from "./Pages/Contact";
 import "./App.css";
 function App() {
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <Navbar />
       <main>
         <Routes>
