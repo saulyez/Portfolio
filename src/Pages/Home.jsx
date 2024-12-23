@@ -32,8 +32,8 @@ const Home = () => {
         <h2 className="title">I am a Software Developer</h2>
 
         <div className="Button-Container">
-            <button className="Discover-Button" onClick={() => window.location.href = '/about'}>Discover</button>
-            <button className="Contact-Button" onClick={() => window.location.href = '/projects'}>More</button>
+            <button className="Discover-Button" onClick={() => window.location.href = '/Portfolio/about'}>Discover</button>
+            <button className="Contact-Button" onClick={() => window.location.href = '/Portfolio/projects'}>More</button>
         </div>
       </div>
       <div className="Image-Container">
