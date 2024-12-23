@@ -7,7 +7,7 @@ import img4 from "../assets/coffee.jpg";
 import img5 from "../assets/grad.jpg";
 import left from "../assets/left.svg";
 import right from "../assets/right.svg";
-import "../styles/Carousel.css";
+import '../Styles/Carousel.css';
 
 const Carousel = () => {
     const images = [img1, img2, img3, img4,img5]; // Hardcoded images
