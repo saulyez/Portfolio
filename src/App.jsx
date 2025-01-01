@@ -17,9 +17,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-      <footer className="Footer">
+      {/* <footer className="Footer">
         <p>© 2024 My Portfolio. All rights reserved.</p>
-      </footer>
+      </footer> */}
     </Router>
   );
 }
