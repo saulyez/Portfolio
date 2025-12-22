@@ -2,14 +2,11 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import img1 from "../assets/cr1.jpg";
 import img2 from "../assets/uni.jpg";
-import img3 from "../assets/me.jpg";
-import img4 from "../assets/coffee.jpg";
-import img5 from "../assets/grad.jpg";
+import img3 from "../assets/coffee.jpg";
 import '../Styles/Carousel.css';
 
 const Carousel = () => {
-    const images = [img1, img2, img3, img4,img5]; // Hardcoded images
-
+    const images = [img1, img2, img3]; // Hardcoded images
     const [currentIndex, setCurrentIndex] = useState(0);
     const [direction, setDirection] = useState(null);
 
